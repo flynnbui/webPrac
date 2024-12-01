@@ -1,9 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
-import Landing from "../pages/Landing";
+import Dashboard from "../pages/Dashboard";
+import Blanko from "@/pages/Blanko";
+import Slido from "@/pages/Slido";
 
-export const router = createBrowserRouter( [
+export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Landing/>
+        element: <Dashboard />
+    },
+    {
+        path: "/blanko",
+        element: <Blanko />
+    },
+    {
+        path: "/slido",
+        element: <Slido />
     }
 ])
